@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('welcome', welcome, name="tictactoe_welcome"),
     path('', welcome),
-    re_path(r'^player/', include('player.urls'))
+    re_path(r'^player/', include('player.urls')),
+    re_path(r'^games/', include('gameplay.urls'))
 ]
